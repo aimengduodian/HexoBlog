@@ -12,7 +12,7 @@ keywords: "Hexo, 重新部署, 恢复"
 abbrlink: dda8c81b
 description:
 top_img: 
-cover: http://47.106.222.50:8083/book/ee0a80b71ae841f597ac9376ccb812d6.jpg
+cover: https://tse1-mm.cn.bing.net/th/id/R-C.4ab0063efd31d0ac96f3c83eb60ac5ea?rik=tkYjJW%2b2xKNx9w&riu=http%3a%2f%2fimg1.gamersky.com%2fimage2018%2f07%2f20180707_ddw_459_8%2fgamersky_04small_08_20187711856B.jpg&ehk=a2dQtTEIREZY215eh6yf%2b%2fHtbfGhJ0xLTC8SAh%2f7ZK4%3d&risl=&pid=ImgRaw&r=0
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
