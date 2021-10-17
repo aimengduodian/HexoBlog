@@ -105,4 +105,4 @@ deploy:
   type: git
   repo: https://github.com/aimengduodian/aimengduodian.github.io.git
   branch: main
-  message: test
+  message: 修改
