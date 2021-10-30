@@ -8,7 +8,10 @@ categories:
     - 办公软件
     - excel表格
     - VLOOKUP函数
-  
+keywords: ""
+description:
+top_img: 
+cover: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F-vo3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3D5330c8e1d009b3deebeaec6cf98f40b7%2F3b87e950352ac65c154609fafaf2b21192138af3.jpg&refer=http%3A%2F%2Fgss0.baidu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638096673&t=c0dac2e286046202bd9c5d0f14db1d8f
 ---
 成都的公务员报名，每天都有两次公布报考缴费人数比例，这样可以有效避免报考人数扎堆。对我这种学渣，肯定是要选择报考人数少的。在选择的时候发现，一个一个的查找数据太麻烦，因为涉及到好几个表格。为了节省时间和方便比较那就要用到excel的vlookup函数公式了。
 
