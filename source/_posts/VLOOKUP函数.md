@@ -5,7 +5,7 @@ tags:
     - 表格数据关联
     - 多个表格之间快速导入数据
 categories:
-    - 办公软件
+    - Office
     - excel表格
     - VLOOKUP函数
 keywords: ""
