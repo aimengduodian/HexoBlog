@@ -2,8 +2,8 @@
 title: VLOOKUP函数
 date: 2021-10-17 23:08:08
 tags:
-    - 表格数据关联
-    - 多个表格之间快速导入数据
+    - excel函数
+    - 关联表查询
 categories:
     - Office
     - excel表格
