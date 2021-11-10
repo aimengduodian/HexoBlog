@@ -11,7 +11,7 @@ categories:
 keywords:
 description:
 top_img:
-cover: https://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/342ac65c1038534314ecc0659213b07eca808857.jpg
+cover: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F1113%2F0F220093111%2F200F2093111-2-1200.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638967692&t=b57442da17cea3a28c302043bbbd00bc
 ---
 ## 理论基础
 A + B = C型的相关结论  
