@@ -103,6 +103,6 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/aimengduodian/aimengduodian.github.io.git
+  repo: http://github.com/aimengduodian/aimengduodian.github.io.git
   branch: main
   message: add
