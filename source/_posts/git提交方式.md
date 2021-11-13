@@ -6,7 +6,7 @@ categories:
 keywords:
 description:
 top_img:
-cover:
+cover: http://tva1.sinaimg.cn/large/005SoUZ5ly1gwdyv8i3w5j30rs0m8dll.jpg
 ---
 
 git 在提交时，总是超时。科学上网后还是不能提交。

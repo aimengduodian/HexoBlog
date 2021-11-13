@@ -106,3 +106,36 @@ deploy:
   repo: http://github.com/aimengduodian/aimengduodian.github.io.git
   branch: main
   message: add
+
+# 电影插件
+douban:
+  user: '250018531'
+  builtin: true
+  # book:
+  #   title: 'This is my book title'
+  #   quote: 'This is my book quote'
+  #   meta: true
+  #   comments: true
+  #   top_img: https://cccccc.png
+  #   aside: true
+  #   path: books
+  #   limit:
+  movie:
+    title: '动漫'
+    quote: '动漫'
+    meta: true
+    comments: true
+    top_img: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F10327606947%2F0.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1639388805&t=342920382aff74b6ed2288ddfe90102e
+    aside: true
+    path: movies
+    limit:
+  # game:
+  #   title: 'This is my game title'
+  #   quote: 'This is my game quote'
+  #   meta: true
+  #   comments: true
+  #   top_img: https://cccccc.png
+  #   aside: true
+  #   path: games
+  #   limit:
+  timeout: 10000 

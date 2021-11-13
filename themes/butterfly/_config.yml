@@ -11,9 +11,10 @@ menu:
   时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  清单||fas fa-list:
-    音乐: /music/ || fas fa-music
-    电影: /movies/ || fas fa-video
+  娱乐||fas fa-list:
+    动漫: /movies/ || fas fa-video
+    图库: /picture/ || fas fa-peace
+    自言自语: /artitalk/ ||	fas fa-comments	
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
@@ -927,3 +928,4 @@ CDN:
   prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+
