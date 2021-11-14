@@ -2,8 +2,8 @@
 title: A加B等于C
 date: 2021-11-04 20:47:56
 tags:
+ - 资料
  - 混合增长率
- - 资料分析
 categories:
  - 考公
  - 行测
