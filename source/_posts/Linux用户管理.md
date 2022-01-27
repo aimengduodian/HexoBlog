@@ -28,6 +28,120 @@ passwd 用户名
 userdel -r 用户名
 ```
 
+4、 bash文件创建用户并生成随机密码
+```
+#!/bin/bash
+
+ERR_USAGE=1
+ERR_INT=2
+
+ERR=$(tput setaf 1)     # red
+WARN=$(tput setaf 3)    # yellow
+INFO=$(tput setaf 6)    # cyan
+SUCCESS=$(tput setaf 2) # green
+BOLD=$(tput bold)
+
+colorEcho(){
+    echo -e $(tput bold)"$1""$2"$(tput sgr0)
+}
+
+pause(){
+    colorEcho $INFO "\nNow, press any key to continue..."
+    while true
+    do
+        printf "\r-"; sleep 0.1
+        printf "\r\\"; sleep 0.1
+        printf "\r|"; sleep 0.1
+        printf "\r/"
+        read -s -n1 -t 0.1
+        [ $? -eq 0 ] && break
+    done
+    echo -en "\r \r" # wipe out the waiting -\|/
+}
+
+is_root(){
+    if [ $(whoami) != "root" ]
+    then
+        colorEcho $ERR "此用户没有创建用户的权限。"
+        exit $ERR_INT
+    fi
+}
+
+note(){
+	colorEcho $INFO "**********************************************"
+	cat<<EOF
+                用户管理脚本
+- 作者: 爱梦多点
+- 时间: 2022年1月15日01点30分
+- 日志:
+    1.创建用户并生成随机密码。
+EOF
+	colorEcho $INFO "**********************************************"
+
+	is_root
+}
+
+congrats(){
+	colorEcho $SUCCESS "**********************************************"
+	cat<<EOF
+    用户创建成功，请及时修改密码。
+EOF
+	colorEcho $SUCCESS "**********************************************"
+	pause
+}
+
+adduser(){
+    colorEcho $INFO "\n输入用户名或按 q 退出"
+    stty erase ^h # 添加这一句后，可以使用删除按键
+    while read -p "用户名:" USER_NAME
+    do
+		case $USER_NAME in
+			q) exit $ERR_INT ;;
+			*) 
+                useradd "$USER_NAME" # 创建用户
+                if [ $? != "0" ]
+                then
+                    colorEcho $ERR "此用户名不可用，请输入其他用户名。"
+                else
+                    break
+                fi
+             ;;
+		esac
+    done
+   
+    PW=$(tr -dc "0-9a-zA-Z" < /dev/urandom | head -c 8)    # 生成数字大小写，八位随机数
+    echo "$USER_NAME $PW" >> /tmp/pw.txt  # 保存用户名和密码
+    echo "$PW" | passwd --stdin $USER_NAME # 设置密码
+    
+    colorEcho $WARN "\n是否添加sudo权限。请谨慎选择。" 
+    colorEcho $INFO "(1)添加" 
+    colorEcho $INFO "(0)不添加" 
+   
+    while read -p "输入数字:" -n1 REP
+    do
+		case $REP in
+			0) break ;;
+			1) 
+                echo
+                echo "$USER_NAME    ALL=(ALL)    ALL" >> /etc/sudoers 
+                break
+                ;;
+			*) 
+                echo
+                colorEcho $ERR "输入不合法，请重新输入" 
+                ;;
+		esac
+    done
+    echo
+    colorEcho $INFO "用户密码:$PW"
+}
+
+note
+adduser
+congrats
+
+```
+
 ## 用户列表和用户组
 1、用户列表文件：/etc/passwd/
 
