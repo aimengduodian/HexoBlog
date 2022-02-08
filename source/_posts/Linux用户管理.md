@@ -29,7 +29,7 @@ userdel -r 用户名
 ```
 
 4、 bash文件创建用户并生成随机密码
-```
+```bash
 #!/bin/bash
 
 ERR_USAGE=1
